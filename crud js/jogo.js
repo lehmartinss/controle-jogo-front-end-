@@ -36,7 +36,7 @@ async function  getRetornarLista(jogo){
     return data
 }
 
-async function  getRetornarJogo (id){
+async function  getRetornarJogoById (id){
     const url = ` http://localhost:8080/v1/controle-jogos/jogo/${id}`
     const response = await fetch(url)
     const data = await response.json()
@@ -77,3 +77,7 @@ const AtualizarJogo = {
 }   
 
 console.log(putAtualizarJogo(1, AtualizarJogo))
+
+
+
+
